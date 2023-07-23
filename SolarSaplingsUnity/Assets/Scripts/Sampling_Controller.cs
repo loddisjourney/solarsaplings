@@ -15,7 +15,10 @@ public class Sampling_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(QRCodeManager.qrScanned)
+        {
+            Planting();
+        }
     }
 
     public void Planting()
